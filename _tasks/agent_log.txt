@@ -12,3 +12,5 @@
 [2026-06-24 08:53:14] [CREATED] task_011: README.md → writer_agent
 [2026-06-24 08:53:14] [CREATED] task_012: Pruebas y depuración → manager
 [2026-06-24 08:53:14] [IN_PROGRESS] task_001: Crear estructura del proyecto
+[2026-06-24 08:55:29] [COMPLETED] task_001: Crear estructura del proyecto
+[2026-06-24 08:55:31] [IN_PROGRESS] task_002: Configurar manifest.json
