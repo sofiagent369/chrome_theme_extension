@@ -3,6 +3,10 @@
     {
       "content": "Agente ⚙️ Experto Backend completó: Crear estructura del proyecto. Archivos: manifest.json, src/popup.html, src/background.js, src/content.js, .env.example",
       "timestamp": "2026-06-24T08:55:29.437877"
+    },
+    {
+      "content": "Agente 🔧 Agente Tools/API completó: Configurar manifest.json. Archivos: manifest.json, src/popup.html, src/background.js, src/content.js",
+      "timestamp": "2026-06-24T08:57:59.134809"
     }
   ],
   "decisions": [],
@@ -19,6 +23,11 @@
       "src/popup.html",
       "src/background.js",
       "src/content.js"
+    ],
+    "frontend_expert": [
+      "src/popup.html",
+      "src/popup.css",
+      "src/popup.js"
     ]
   }
 }
