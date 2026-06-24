@@ -1,0 +1,13 @@
+{
+  "context": [],
+  "decisions": [],
+  "file_map": {
+    "backend_expert": [
+      "manifest.json",
+      "src/popup.html",
+      "src/background.js",
+      "src/content.js",
+      ".env.example"
+    ]
+  }
+}

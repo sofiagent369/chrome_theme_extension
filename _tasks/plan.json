@@ -1,0 +1,122 @@
+{
+  "project_name": "chrome_theme_extension",
+  "description": "Extensión de Chrome que permite cambiar el tema/colores de cualquier página web con interfaz moderna y configuración persistente.",
+  "tech_stack": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "tasks": [
+    {
+      "title": "Crear estructura del proyecto",
+      "description": "Crear directorios: icons/, src/. Crear archivos: manifest.json, popup.html, background.js, content.js.",
+      "assigned_to": "backend_expert",
+      "dependencies": [],
+      "priority": 1
+    },
+    {
+      "title": "Configurar manifest.json",
+      "description": "Configurar manifest.json para Manifest V3 con permisos, background script, content script y opciones de acción.",
+      "assigned_to": "tools_api_agent",
+      "dependencies": [
+        "task_001"
+      ],
+      "priority": 2
+    },
+    {
+      "title": "Diseñar popup.html",
+      "description": "Crear popup.html con interfaz moderna: selector de tema, botón para aplicar cambios.",
+      "assigned_to": "frontend_expert",
+      "dependencies": [],
+      "priority": 3
+    },
+    {
+      "title": "Estilar popup y options page",
+      "description": "Crear styles.css con estilos para popup.html y futura options page: diseño moderno, colores contrastantes, responsive design.",
+      "assigned_to": "ui_expert",
+      "dependencies": [
+        "task_003"
+      ],
+      "priority": 4
+    },
+    {
+      "title": "Implementar lógica en popup.js",
+      "description": "Crear popup.js para manejar la selección de tema y comunicación con background.js.",
+      "assigned_to": "frontend_expert",
+      "dependencies": [
+        "task_003",
+        "task_002"
+      ],
+      "priority": 5
+    },
+    {
+      "title": "Configurar options page",
+      "description": "Crear options.html con interfaz para guardar y cargar configuraciones de temas.",
+      "assigned_to": "frontend_expert",
+      "dependencies": [
+        "task_001",
+        "task_004"
+      ],
+      "priority": 6
+    },
+    {
+      "title": "Manejar persistencia en background.js",
+      "description": "Implementar lógica en background.js para almacenar y recuperar configuraciones de temas usando chrome.storage.",
+      "assigned_to": "persistence_agent",
+      "dependencies": [
+        "task_001"
+      ],
+      "priority": 7
+    },
+    {
+      "title": "Interactuar con páginas web en content.js",
+      "description": "Crear content.js para aplicar los temas seleccionados a las páginas web cargadas.",
+      "assigned_to": "frontend_expert",
+      "dependencies": [
+        "task_001",
+        "task_007"
+      ],
+      "priority": 8
+    },
+    {
+      "title": "Comunicación entre scripts",
+      "description": "Implementar comunicación entre popup.js, background.js y content.js para aplicar cambios de tema en tiempo real.",
+      "assigned_to": "tools_api_agent",
+      "dependencies": [
+        "task_005",
+        "task_007",
+        "task_008"
+      ],
+      "priority": 9
+    },
+    {
+      "title": "Crear iconos",
+      "description": "Diseñar e implementar iconos para la extensión en el directorio icons/.",
+      "assigned_to": "ui_expert",
+      "dependencies": [],
+      "priority": 10
+    },
+    {
+      "title": "README.md",
+      "description": "Crear README.md con descripción del proyecto, configuración de instalación, y capturas de pantalla placeholders.",
+      "assigned_to": "writer_agent",
+      "dependencies": [
+        "task_001",
+        "task_004",
+        "task_009"
+      ],
+      "priority": 11
+    },
+    {
+      "title": "Pruebas y depuración",
+      "description": "Realizar pruebas de la extensión en diferentes navegadores para asegurar funcionalidad y corregir errores.",
+      "assigned_to": "manager",
+      "dependencies": [
+        "task_001",
+        "task_004",
+        "task_009"
+      ],
+      "priority": 12
+    }
+  ]
+}
